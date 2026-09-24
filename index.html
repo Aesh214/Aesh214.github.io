@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Aysha Mohammed: Data Entry & Virtual Assistant</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Data Entry Specialist</h1>
+
+        <p>
+            I help businesses organize, manage, and maintain
+            their data accurately and efficiently.
+        </p>
+
+        <a href="#portfolio" class="button">View My Work</a>
+
+    </div>
+
+    <div class="hero-profile">
+        <img id="hero-profile-image" src="" alt="Aysha Mohammed">
+    </div>
+
+</section>
+        <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a detail-oriented data entry specialist with experience
+        working with Microsoft Excel, Google Sheets, and other
+        productivity tools. I focus on accuracy, organization, and
+        helping businesses manage their data efficiently.
+    </p>
+
+</section>
+<section id="services" class="services">
+
+    <h2>My Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>Data Entry</h3>
+            <p>
+                Accurate and organized data entry for documents,
+                spreadsheets, databases, and business records.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Excel & Google Sheets</h3>
+            <p>
+                Data organization, formatting, spreadsheets,
+                and basic calculations using Excel and Google Sheets.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Research</h3>
+            <p>
+                Finding, collecting, and organizing reliable
+                information from the web.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Data Cleaning</h3>
+            <p>
+                Cleaning, organizing, and correcting data to make
+                spreadsheets easier to use and understand.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section id="skills" class="skills">
+
+    <h2>My Skills</h2>
+
+    <p class="skills-intro">
+        I provide reliable digital support and organized solutions
+        to help businesses save time and work more efficiently.
+    </p>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Data Entry</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Microsoft Excel</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Google Sheets</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Data Cleaning</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Web Research</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Virtual Assistance</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Typing & Accuracy</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Basic Web Design</h3>
+        </div>
+
+    </div>
+
+</section>
+<section id="upload" class="upload-section">
+
+    <h2>My Portfolio Manager</h2>
+    <div id="login-section">
+
+    <input
+        type="email"
+        id="login-email"
+        placeholder="Your email"
+    >
+
+    <input
+        type="password"
+        id="login-password"
+        placeholder="Your password"
+    >
+
+    <button type="button" id="login-button">
+        🔐 Login
+    </button>
+
+    <p id="login-message"></p>
+
+</div>
+<div id="reset-password-section" style="display: none;">
+
+    <h3>Set New Password</h3>
+
+    <input
+        type="password"
+        id="new-password"
+        placeholder="Enter new password"
+    >
+
+    <button type="button" id="update-password-button">
+        Update Password
+    </button>
+
+    <p id="reset-message"></p>
+
+</div>
+    <p class="upload-intro">
+        Add your profile photo and manage your portfolio work samples.
+    </p>
+
+    <!-- Profile Photo -->
+    <div class="profile-upload">
+
+        <h3>Profile Photo</h3>
+
+        <div id="profile-preview" class="profile-preview">
+            <p>No profile photo selected.</p>
+        </div>
+
+        <label for="profile-photo" class="upload-button">
+            📸 Choose Profile Photo
+        </label>
+
+        <input
+            type="file"
+            id="profile-photo"
+            accept="image/*"
+        >
+
+        <button
+            type="button"
+            id="delete-profile"
+            class="delete-button"
+        >
+            🗑️ Delete Photo
+        </button>
+
+    </div>
+
+
+    <!-- Portfolio Files -->
+    <div class="portfolio-upload">
+
+        <h3>Portfolio Work Samples</h3>
+
+        <label for="portfolio-files" class="upload-button">
+            📁 Add Work Samples
+        </label>
+
+        <input
+            type="file"
+            id="portfolio-files"
+            multiple
+            accept=".jpg,.jpeg,.png,.pdf,.xlsx,.xls,.csv"
+        >
+
+        <p class="upload-note">
+            Add Excel files, PDFs, images, and CSV files.
+        </p>
+
+        <div id="file-preview" class="file-preview"></div>
+
+    </div>
+
+</section>
+<section id="portfolio" class="portfolio">
+
+    <h2>My Work Samples</h2>
+
+    <p class="portfolio-intro">
+        Here are some examples of the type of work I can provide
+        for clients.
+    </p>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-card">
+            <h3>Excel Data Entry</h3>
+            <p>
+                Organized customer information in an Excel spreadsheet
+                with accurate formatting and data entry.
+            </p>
+            <a href="sampl.html" class="portfolio-button">View Sample</a>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Data Cleaning</h3>
+            <p>
+                Cleaned and organized a dataset by removing duplicates,
+                correcting formatting, and arranging information.
+            </p>
+            <a href="clean.html" class="portfolio-button">View Sample</a>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Web Research</h3>
+            <p>
+                Researched information online and organized the results
+                into a clear and easy-to-use spreadsheet.
+            </p>
+            <a href="research.html" class="portfolio-button">View Sample</a>
+        </div>
+
+    </div>
+<div class="uploaded-samples">
+
+    <h3>Uploaded Work Samples</h3>
+
+    <div id="uploaded-samples-container"></div>
+
+</div>
+</section>
+<section id="contact" class="contact">
+
+    <h2>Let's Work Together</h2>
+
+    <p>
+        Have a project or need help with data entry?
+        Feel free to contact me.
+    </p>
+
+    <a href="mailto:ayhamohammed@gmail.com" class="contact-button">
+        Contact Me
+    </a>
+
+</section>
+<footer>
+
+    <p>© 2026 My Portfolio. All rights reserved.</p>
+
+</footer>
+    </main>
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <script>  
+     const SUPABASE_URL = "https://wuhcgmspvthvufobmrfr.supabase.co";
+const SUPABASE_KEY = "sb_publishable_xK2K__29FLgCRAphXeU0Cg_TZuwML1z";
+const supabaseClient = supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);  
+async function loadUploadedSamples() {
+
+    const uploadedSamplesContainer =
+        document.getElementById("uploaded-samples-container");
+
+    if (!uploadedSamplesContainer) {
+        return;
+    }
+
+    uploadedSamplesContainer.innerHTML = "";
+
+    const { data: files, error } = await supabaseClient
+        .from("portfolio-samples")
+        .select("file_name, file_path")
+        .order("id", { ascending: false });
+
+   if (error) {
+
+    console.error("Could not load uploaded samples:", error);
+    return;
+
+}
+console.log("Portfolio files received:", files);
+    files.forEach(function (file) {
+
+        const fileItem = document.createElement("div");
+        fileItem.className = "uploaded-sample-item";
+
+        const fileName = document.createElement("p");
+        fileName.textContent = file.file_name;
+
+        const viewButton = document.createElement("a");
+        viewButton.textContent = "👁️ View File";
+        viewButton.className = "portfolio-button";
+        viewButton.target = "_blank";
+
+        const { data: publicUrlData } =
+            supabaseClient.storage
+                .from("portfolio-files")
+                .getPublicUrl(file.file_path);
+
+        viewButton.href = publicUrlData.publicUrl;
+
+        fileItem.appendChild(fileName);
+        fileItem.appendChild(viewButton);
+
+        uploadedSamplesContainer.appendChild(fileItem);
+
+    });
+}
+
+loadUploadedSamples();
+// Password Recovery
+const resetPasswordSection = document.getElementById("reset-password-section");
+const updatePasswordButton = document.getElementById("update-password-button");
+const newPassword = document.getElementById("new-password");
+const resetMessage = document.getElementById("reset-message");
+
+supabaseClient.auth.onAuthStateChange((event, session) => {
+
+    console.log("AUTH EVENT:", event, session);
+
+    if (event === "PASSWORD_RECOVERY") {
+        resetPasswordSection.style.display = "block";
+    }
+
+});
+supabaseClient.auth.getSession().then(({ data, error }) => {
+
+    if (error) {
+        resetMessage.textContent = error.message;
+        return;
+    }
+
+    if (data.session) {
+        resetPasswordSection.style.display = "block";
+    }
+
+});
+updatePasswordButton.addEventListener("click", async function () {
+
+    const password = newPassword.value;
+
+    if (!password) {
+        resetMessage.textContent = "Please enter a new password.";
+        return;
+    }
+
+    const { error } = await supabaseClient.auth.updateUser({
+        password: password
+    });
+
+    if (error) {
+        resetMessage.textContent = error.message;
+        return;
+    }
+
+    resetMessage.textContent = "Password updated successfully! You can now log in.";
+    newPassword.value = "";
+
+});
+const loginButton = document.getElementById("login-button");
+const loginEmail = document.getElementById("login-email");
+const loginPassword = document.getElementById("login-password");
+const loginMessage = document.getElementById("login-message");
+
+loginButton.addEventListener("click", async function () {
+
+    const { data, error } = await supabaseClient.auth.signInWithPassword({
+        email: loginEmail.value,
+        password: loginPassword.value
+    });
+
+    if (error) {
+        loginMessage.textContent = "Login failed. Please check your email and password.";
+        return;
+    }
+
+    loginMessage.textContent = "Login successful!";
+
+});
+    const profilePhoto = document.getElementById("profile-photo");
+    const profilePreview = document.getElementById("profile-preview");
+    const deleteProfile = document.getElementById("delete-profile");
+
+    profilePhoto.addEventListener("change", function () {
+
+        const file = profilePhoto.files[0];
+
+        if (file) {
+
+            profilePreview.innerHTML = "";
+            const transaction = portfolioDB.result.transaction(["files"], "readwrite");
+const store = transaction.objectStore("files");
+
+store.add({
+    name: "profile-photo",
+    type: file.type,
+    file: file
+});
+
+            const image = document.createElement("img");
+            image.src = URL.createObjectURL(file);
+
+            profilePreview.appendChild(image);
+            const heroImage = document.getElementById("hero-profile-image");
+heroImage.src = image.src;
+        }
+    });
+
+    deleteProfile.addEventListener("click", function () {
+
+    profilePhoto.value = "";
+    profilePreview.innerHTML = "<p>No profile photo selected.</p>";
+
+    const heroImage = document.getElementById("hero-profile-image");
+    heroImage.src = "";
+
+    const transaction =
+        portfolioDB.result.transaction(["files"], "readwrite");
+
+    const store =
+        transaction.objectStore("files");
+
+    const request = store.getAll();
+
+    request.onsuccess = function () {
+
+        request.result.forEach(function (savedFile) {
+
+            if (savedFile.name === "profile-photo") {
+                store.delete(savedFile.id);
+            }
+
+        });
+    };
+});
+    
+
+
+    const fileInput = document.getElementById("portfolio-files");
+    const filePreview = document.getElementById("file-preview");
+
+    fileInput.addEventListener("change", async function () {
+
+    const files = Array.from(fileInput.files);
+
+for (const file of files) {
+
+    // Check if this filename already exists
+    const checkTransaction =
+        portfolioDB.result.transaction(["files"], "readonly");
+
+    const checkStore =
+        checkTransaction.objectStore("files");
+
+    const checkRequest = checkStore.getAll();
+
+    const existingFiles = await new Promise(function (resolve) {
+
+        checkRequest.onsuccess = function () {
+            resolve(checkRequest.result);
+        };
+
+        checkRequest.onerror = function () {
+            resolve([]);
+        };
+
+    });
+
+    const duplicate = existingFiles.some(function (savedFile) {
+        return savedFile.name === file.name;
+    });
+
+    if (duplicate) {
+
+        alert("This file has already been uploaded: " + file.name);
+        continue;
+
+    }
+
+        // Save the file locally as before
+        const transaction = portfolioDB.result.transaction(["files"], "readwrite");
+const store = transaction.objectStore("files");
+
+// Upload path for Supabase
+const filePath =
+    "portfolio/" +
+    Date.now() +
+    "-" +
+    file.name;
+
+store.add({
+    name: file.name,
+    type: file.type,
+    file: file,
+    supabasePath: filePath
+});
+
+        const { data, error } = await supabaseClient.storage
+            .from("portfolio-files")
+            .upload(filePath, file, {
+                cacheControl: "3600",
+                upsert: false
+            });
+if (error) {
+
+    console.error("Supabase upload error:", error);
+
+    alert(
+        "The file could not be uploaded to Supabase. " +
+        error.message
+    );
+
+} else {
+
+    console.log("File uploaded to Supabase:", data);
+
+    const { error: databaseError } = await supabaseClient
+        .from("portfolio-samples")
+        .insert({
+            file_name: file.name,
+            file_path: filePath
+        });
+
+    if (databaseError) {
+
+        console.error("Database insert error:", databaseError);
+
+        alert(
+            "The file was uploaded, but it could not be added to the public portfolio list. " +
+            databaseError.message
+        );
+
+    }
+
+}
+
+        // Show the file on the website
+        const fileItem = document.createElement("div");
+        fileItem.className = "file-item";
+
+        if (file.type.startsWith("image/")) {
+
+            const image = document.createElement("img");
+            image.src = URL.createObjectURL(file);
+
+            fileItem.appendChild(image);
+        }
+
+        const fileName = document.createElement("p");
+        fileName.textContent = file.name;
+
+        const viewButton = document.createElement("a");
+viewButton.textContent = "👁️ View File";
+viewButton.className = "portfolio-button";
+
+const { data: publicUrlData } = supabaseClient.storage
+    .from("portfolio-files")
+    .getPublicUrl(filePath);
+
+viewButton.href = publicUrlData.publicUrl;
+        viewButton.target = "_blank";
+
+        fileItem.appendChild(viewButton);
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "🗑️ Delete";
+        deleteButton.className = "delete-button";
+fileItem.dataset.supabasePath = filePath;
+        deleteButton.addEventListener("click", async function () {
+
+    // Delete from Supabase Storage
+    const { error } = await supabaseClient.storage
+        .from("portfolio-files")
+        .remove([filePath]);
+
+    if (error) {
+        console.error("Supabase delete error:", error);
+        alert("The file could not be deleted from Supabase.");
+        return;
+    }
+
+    // Remove from the page
+    fileItem.remove();
+});
+
+        fileItem.appendChild(fileName);
+        fileItem.appendChild(deleteButton);
+
+        filePreview.appendChild(fileItem);
+    }
+
+    fileInput.value = "";
+});
+    const portfolioDB = indexedDB.open("AyshaPortfolio", 1);
+
+portfolioDB.onupgradeneeded = function (event) {
+    const db = event.target.result;
+
+    if (!db.objectStoreNames.contains("files")) {
+        db.createObjectStore("files", {
+            keyPath: "id",
+            autoIncrement: true
+        });
+    }
+};
+
+portfolioDB.onerror = function () {
+    console.log("Portfolio storage could not be opened.");
+};
+portfolioDB.onsuccess = function () {
+    const profileTransaction =
+    portfolioDB.result.transaction(["files"], "readonly");
+
+const profileStore =
+    profileTransaction.objectStore("files");
+
+const profileRequest = profileStore.getAll();
+
+profileRequest.onsuccess = function () {
+
+    const savedFiles = profileRequest.result;
+
+    const savedProfile = savedFiles.find(function (savedFile) {
+        return savedFile.name === "profile-photo";
+    });
+
+    if (savedProfile) {
+
+        const image = document.createElement("img");
+        image.src = URL.createObjectURL(savedProfile.file);
+
+        profilePreview.innerHTML = "";
+        profilePreview.appendChild(image);
+
+        const heroImage =
+            document.getElementById("hero-profile-image");
+
+        heroImage.src = image.src;
+    }
+};
+
+    const db = portfolioDB.result;
+    const transaction = db.transaction(["files"], "readonly");
+    const store = transaction.objectStore("files");
+
+    const request = store.getAll();
+
+    request.onsuccess = function () {
+        
+
+        request.result.forEach(function (savedFile) {
+            if (savedFile.name === "profile-photo") {
+    return;
+}
+
+            const fileItem = document.createElement("div");
+            fileItem.className = "file-item";
+
+            if (savedFile.type.startsWith("image/")) {
+
+                const image = document.createElement("img");
+                image.src = URL.createObjectURL(savedFile.file);
+
+                fileItem.appendChild(image);
+            }
+
+            const fileName = document.createElement("p");
+            fileName.textContent = savedFile.name;
+
+            const viewButton = document.createElement("a");
+            viewButton.textContent = "👁️ View File";
+            viewButton.className = "portfolio-button";
+           if (savedFile.supabasePath) {
+
+    const { data: publicUrlData } = supabaseClient.storage
+        .from("portfolio-files")
+        .getPublicUrl(savedFile.supabasePath);
+
+    viewButton.href = publicUrlData.publicUrl;
+
+} else {
+
+    viewButton.href = URL.createObjectURL(savedFile.file);
+
+}
+            viewButton.target = "_blank";
+
+            fileItem.appendChild(viewButton);
+
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "🗑️ Delete";
+            deleteButton.className = "delete-button";
+
+            deleteButton.addEventListener("click", function () {
+
+                const deleteTransaction =
+                    db.transaction(["files"], "readwrite");
+
+                const deleteStore =
+                    deleteTransaction.objectStore("files");
+
+                deleteStore.delete(savedFile.id);
+
+                fileItem.remove();
+            });
+
+            fileItem.appendChild(fileName);
+            fileItem.appendChild(deleteButton);
+
+            filePreview.appendChild(fileItem);
+        });
+    };
+};
+</script>
+
+</body>
+
+
+</html>
