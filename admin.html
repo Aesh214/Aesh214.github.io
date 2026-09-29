@@ -97,8 +97,14 @@
 const SUPABASE_KEY = "sb_publishable_xK2K__29FLgCRAphXeU0Cg_TZuwML1z";
 const supabaseClient = supabase.createClient(
     SUPABASE_URL,
-    SUPABASE_KEY
-);  
+    SUPABASE_KEY,
+    {
+        auth: {
+            persistSession: true,
+            storage: window.sessionStorage
+        }
+    }
+);
 window.supabaseClient = supabaseClient;
 async function loadUploadedSamples() {
 
@@ -184,7 +190,7 @@ logoutButton.addEventListener("click", async function () {
         console.error("Logout failed:", error);
         return;
     }
-
+S
     window.location.href = "login.html";
 });
     const profilePhoto = document.getElementById("profile-photo");
