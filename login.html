@@ -30,6 +30,7 @@
         type="password"
         id="login-password"
         placeholder="Your password"
+         autocomplete="username"
     >
 
     <button type="button" id="login-button">
@@ -47,6 +48,7 @@
         type="password"
         id="new-password"
         placeholder="Enter new password"
+        autocomplete="new-password"
     >
 
     <button type="button" id="update-password-button">
@@ -71,8 +73,13 @@
 const SUPABASE_KEY = "sb_publishable_xK2K__29FLgCRAphXeU0Cg_TZuwML1z";
 const supabaseClient = supabase.createClient(
     SUPABASE_URL,
-    SUPABASE_KEY
-);  
+    SUPABASE_KEY,
+    {
+        auth: {
+            persistSession: false
+        }
+    }
+);
 window.supabaseClient = supabaseClient;
 async function loadUploadedSamples() {
 
