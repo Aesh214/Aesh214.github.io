@@ -13,6 +13,10 @@
         <div class="admin-heading">
     <h1>Aysha Mohammed</h1>
     <p>Portfolio Admin</p>
+
+    <button type="button" id="logout-button">
+        🚪 Logout
+    </button>
 </div>
     </header>
 
@@ -169,6 +173,19 @@ supabaseClient.auth.onAuthStateChange((event) => {
     if (event === "SIGNED_OUT") {
         window.location.href = "login.html";
     }
+});
+const logoutButton = document.getElementById("logout-button");
+
+logoutButton.addEventListener("click", async function () {
+
+    const { error } = await supabaseClient.auth.signOut();
+
+    if (error) {
+        console.error("Logout failed:", error);
+        return;
+    }
+
+    window.location.href = "login.html";
 });
     const profilePhoto = document.getElementById("profile-photo");
     const profilePreview = document.getElementById("profile-preview");
