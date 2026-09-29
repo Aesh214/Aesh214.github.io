@@ -3,207 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <title>Admin Login | Aysha Mohammed</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <div class="logo">Aysha Mohammed: Data Entry & Virtual Assistant</div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="admin-heading">
+    <h1>Aysha Mohammed</h1>
+    <p>Portfolio Admin</p>
+</div>
     </header>
 
     <main>
+<section id="upload" class="upload-section">
+    <h2>My Portfolio Manager</h2>
+    <div id="login-section">
 
-        <section id="home" class="hero">
+    <input
+        type="email"
+        id="login-email"
+        placeholder="Your email"
+    >
+    <input
+        type="password"
+        id="login-password"
+        placeholder="Your password"
+    >
 
-    <div class="hero-content">
+    <button type="button" id="login-button">
+        🔐 Login
+    </button>
 
-        <h1>Data Entry Specialist</h1>
-
-        <p>
-            I help businesses organize, manage, and maintain
-            their data accurately and efficiently.
-        </p>
-
-        <a href="#portfolio" class="button">View My Work</a>
-
-    </div>
-
-    <div class="hero-profile">
-        <img id="hero-profile-image" src="" alt="Aysha Mohammed">
-    </div>
-
-</section>
-        <section id="about" class="about">
-
-    <h2>About Me</h2>
-
-    <p>
-        I am a detail-oriented data entry specialist with experience
-        working with Microsoft Excel, Google Sheets, and other
-        productivity tools. I focus on accuracy, organization, and
-        helping businesses manage their data efficiently.
-    </p>
-
-</section>
-<section id="services" class="services">
-
-    <h2>My Services</h2>
-
-    <div class="service-container">
-
-        <div class="service-card">
-            <h3>Data Entry</h3>
-            <p>
-                Accurate and organized data entry for documents,
-                spreadsheets, databases, and business records.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Excel & Google Sheets</h3>
-            <p>
-                Data organization, formatting, spreadsheets,
-                and basic calculations using Excel and Google Sheets.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Web Research</h3>
-            <p>
-                Finding, collecting, and organizing reliable
-                information from the web.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Data Cleaning</h3>
-            <p>
-                Cleaning, organizing, and correcting data to make
-                spreadsheets easier to use and understand.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-<section id="skills" class="skills">
-
-    <h2>My Skills</h2>
-
-    <p class="skills-intro">
-        I provide reliable digital support and organized solutions
-        to help businesses save time and work more efficiently.
-    </p>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <h3>Data Entry</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Microsoft Excel</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Google Sheets</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Data Cleaning</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Web Research</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Virtual Assistance</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Typing & Accuracy</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Basic Web Design</h3>
-        </div>
-
-    </div>
-
-</section>
-<section id="portfolio" class="portfolio">
-
-    <h2>My Work Samples</h2>
-
-    <p class="portfolio-intro">
-        Here are some examples of the type of work I can provide
-        for clients.
-    </p>
-
-    <div class="portfolio-container">
-
-        <div class="portfolio-card">
-            <h3>Excel Data Entry</h3>
-            <p>
-                Organized customer information in an Excel spreadsheet
-                with accurate formatting and data entry.
-            </p>
-            <a href="sampl.html" class="portfolio-button">View Sample</a>
-        </div>
-
-        <div class="portfolio-card">
-            <h3>Data Cleaning</h3>
-            <p>
-                Cleaned and organized a dataset by removing duplicates,
-                correcting formatting, and arranging information.
-            </p>
-            <a href="clean.html" class="portfolio-button">View Sample</a>
-        </div>
-
-        <div class="portfolio-card">
-            <h3>Web Research</h3>
-            <p>
-                Researched information online and organized the results
-                into a clear and easy-to-use spreadsheet.
-            </p>
-            <a href="research.html" class="portfolio-button">View Sample</a>
-        </div>
-
-    </div>
-<div class="uploaded-samples">
-
-    <h3>Uploaded Work Samples</h3>
-
-    <div id="uploaded-samples-container"></div>
+    <p id="login-message"></p>
 
 </div>
-</section>
-<section id="contact" class="contact">
+<div id="reset-password-section" style="display: none;">
 
-    <h2>Let's Work Together</h2>
+    <h3>Set New Password</h3>
 
-    <p>
-        Have a project or need help with data entry?
-        Feel free to contact me.
-    </p>
+    <input
+        type="password"
+        id="new-password"
+        placeholder="Enter new password"
+    >
 
-    <a href="mailto:ayhamohammed@gmail.com" class="contact-button">
-        Contact Me
-    </a>
+    <button type="button" id="update-password-button">
+        Update Password
+    </button>
+
+    <p id="reset-message"></p>
+
+</div>
 
 </section>
 <footer>
@@ -275,6 +127,138 @@ console.log("Portfolio files received:", files);
 
 loadUploadedSamples();
 // Password Recovery
+const resetPasswordSection = document.getElementById("reset-password-section");
+const updatePasswordButton = document.getElementById("update-password-button");
+const newPassword = document.getElementById("new-password");
+const resetMessage = document.getElementById("reset-message");
+
+supabaseClient.auth.onAuthStateChange((event, session) => {
+
+    console.log("AUTH EVENT:", event, session);
+
+    if (event === "PASSWORD_RECOVERY") {
+        resetPasswordSection.style.display = "block";
+    }
+
+});
+supabaseClient.auth.getSession().then(({ data, error }) => {
+
+    if (error) {
+        resetMessage.textContent = error.message;
+        return;
+    }
+
+    if (data.session) {
+        resetPasswordSection.style.display = "block";
+    }
+
+});
+updatePasswordButton.addEventListener("click", async function () {
+
+    const password = newPassword.value;
+
+    if (!password) {
+        resetMessage.textContent = "Please enter a new password.";
+        return;
+    }
+
+    const { error } = await supabaseClient.auth.updateUser({
+        password: password
+    });
+
+    if (error) {
+        resetMessage.textContent = error.message;
+        return;
+    }
+
+    resetMessage.textContent = "Password updated successfully! You can now log in.";
+    newPassword.value = "";
+
+});
+const loginButton = document.getElementById("login-button");
+const loginEmail = document.getElementById("login-email");
+const loginPassword = document.getElementById("login-password");
+const loginMessage = document.getElementById("login-message");
+
+loginButton.addEventListener("click", async function () {
+
+    const { data, error } = await supabaseClient.auth.signInWithPassword({
+        email: loginEmail.value,
+        password: loginPassword.value
+    });
+
+    if (error) {
+
+        loginMessage.textContent =
+            "Login failed. Please check your email and password.";
+
+        return;
+    }
+
+    loginMessage.textContent = "Login successful!";
+
+    window.location.href = "admin.html";
+
+});
+    const profilePhoto = document.getElementById("profile-photo");
+    const profilePreview = document.getElementById("profile-preview");
+    const deleteProfile = document.getElementById("delete-profile");
+
+    profilePhoto.addEventListener("change", function () {
+
+        const file = profilePhoto.files[0];
+
+        if (file) {
+
+            profilePreview.innerHTML = "";
+            const transaction = portfolioDB.result.transaction(["files"], "readwrite");
+const store = transaction.objectStore("files");
+
+store.add({
+    name: "profile-photo",
+    type: file.type,
+    file: file
+});
+
+            const image = document.createElement("img");
+            image.src = URL.createObjectURL(file);
+
+            profilePreview.appendChild(image);
+            const heroImage = document.getElementById("hero-profile-image");
+heroImage.src = image.src;
+        }
+    });
+
+    deleteProfile.addEventListener("click", function () {
+
+    profilePhoto.value = "";
+    profilePreview.innerHTML = "<p>No profile photo selected.</p>";
+
+    const heroImage = document.getElementById("hero-profile-image");
+    heroImage.src = "";
+
+    const transaction =
+        portfolioDB.result.transaction(["files"], "readwrite");
+
+    const store =
+        transaction.objectStore("files");
+
+    const request = store.getAll();
+
+    request.onsuccess = function () {
+
+        request.result.forEach(function (savedFile) {
+
+            if (savedFile.name === "profile-photo") {
+                store.delete(savedFile.id);
+            }
+
+        });
+    };
+});
+    
+
+
     const fileInput = document.getElementById("portfolio-files");
     const filePreview = document.getElementById("file-preview");
 
